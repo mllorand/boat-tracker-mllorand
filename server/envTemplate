@@ -1,0 +1,7 @@
+DB_USER=
+DB_HOST=localhost
+DB_PW=
+DB_DB=boats
+DB_PORT=5432
+
+SERVER_PORT=4000
