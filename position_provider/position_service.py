@@ -2,6 +2,7 @@ import eventlet
 import pandas
 import itertools
 import socketio
+
 print('hello')
 
 sio = socketio.Server(cors_allowed_origins="*", async_mode='eventlet')
@@ -15,6 +16,18 @@ def iter_from_data_frame(line_data):
         'heading': line_data['heading'][i]
     } for i in range(len(line_data))
     )
+
+
+def stream_positions(lines):
+    while True:
+        for position in itertools.zip_longest(*lines):
+            positions = {'line1': position[0],
+                         'line2': position[1],
+                         'line3': position[2]
+                         }
+
+            sio.sleep(1)
+            sio.emit('positions', positions)
 
 
 @sio.event
