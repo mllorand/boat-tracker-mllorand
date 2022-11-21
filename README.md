@@ -25,4 +25,9 @@ Pandas for reading csv,
 Eventlet for async framework (works with coroutines)
 Socketio for socket server
 
+Server:
+A simple express server to distribute the data streamed by position provider to all connected clients
+via socket.io and handle the database
+
+
 
