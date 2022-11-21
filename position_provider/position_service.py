@@ -37,6 +37,8 @@ lines = [iter_from_data_frame(line) for line in lines_data]
 @sio.event
 def connect(sid, environ):
     print(sid, 'connected')
+    sio.start_background_task(stream_positions, lines)
+
 
 
 @sio.event
