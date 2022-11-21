@@ -3,7 +3,6 @@ import pandas
 import itertools
 import socketio
 
-print('hello')
 
 sio = socketio.Server(cors_allowed_origins="*", async_mode='eventlet')
 app = socketio.WSGIApp(sio)
@@ -38,7 +37,6 @@ lines = [iter_from_data_frame(line) for line in lines_data]
 def connect(sid, environ):
     print(sid, 'connected')
     sio.start_background_task(stream_positions, lines)
-
 
 
 @sio.event
