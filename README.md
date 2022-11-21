@@ -29,5 +29,9 @@ Server:
 A simple express server to distribute the data streamed by position provider to all connected clients
 via socket.io and handle the database
 
+Db:
+PostgresSQL database schema with stored procedure, function and view for persisting
+recordings
+
 
 
