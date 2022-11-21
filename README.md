@@ -33,5 +33,6 @@ Db:
 PostgresSQL database schema with stored procedure, function and view for persisting
 recordings
 
-
+Client:
+Vue application with OpenLayers as user interface
 
