@@ -40,25 +40,34 @@ Vue application with OpenLayers as user interface
 To run the app:
 
 Set up provider:
-create a virtualenv in position_provider: virtualenv -p python3 venv
-activate virtualenv: source venv/bin/activate
-install dependencies: pip install -r requirements.txt
-run: python3 position_service.py
+create a virtualenv in position_provider: 
+```virtualenv -p python3 venv```
+activate virtualenv: 
+```source venv/bin/activate```
+install dependencies: 
+```pip install -r requirements.txt```
+run: 
+```python3 position_service.py```
 
 Set up server:
-install dependencies in server: npm install
+install dependencies in server: 
+```npm install```
 create dotenv with contents of envTemplate and fill in the required data for database connection
 
 Set up client:
-install dependencies in client: npm install
+install dependencies in client: 
+```npm install```
 create .env with contents of envTemplate
-run: npm run serve
+run: 
+```npm run serve```
 
 Set up database:
-create boats db with your psql user: create database boats
+create boats db with your psql user:
+```create database boats```
 run schema.pgsql found in server folder
 
-run: node server.js to connect to the provider and start streaming to clients
+run:
+```node server.js to connect to the provider and start streaming to clients```
 
 
 The app:
