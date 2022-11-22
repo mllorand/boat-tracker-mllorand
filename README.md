@@ -78,6 +78,7 @@ it is best to run the client first, then the server, then the position provider,
 The app:
 You can start recording by clicking on a green ship, to stop it, click again, or on another ship to switch recording.
 To replay, click on one of the recordings in the list on the right, it will dissapear when the record ends or if you click the stop replay button
+Everything is synchronised between all clients, feel free to open multiple tabs and play around :)
 
 
 
