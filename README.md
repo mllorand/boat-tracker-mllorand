@@ -54,10 +54,6 @@ install dependencies in client: npm install
 create .env with contents of envTemplate
 run: npm run serve
 
-Set up server:
-install dependencies in server: npm install
-create dotenv with contents of envTemplate and fill in the required data for database connection
-
 Set up database:
 create boats db with your psql user: create database boats
 run schema.pgsql found in server folder
