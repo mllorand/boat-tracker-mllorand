@@ -64,7 +64,9 @@ run:
 Set up database:
 create boats db with your psql user:
 ```create database boats```
-run schema.pgsql found in server folder
+run schema.pgsql found in server folder:
+```psql -f schema.pgsql -d boats```
+BUG: you might have to run it twice because of the order of statements in the file, I'm aware of it, but I'm not going to fix since it's past the deadline
 
 run:
 ```node server.js to connect to the provider and start streaming to clients```
