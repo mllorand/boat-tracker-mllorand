@@ -69,8 +69,11 @@ run schema.pgsql found in server folder:
 BUG: you might have to run it twice because of the order of statements in the file, I'm aware of it, but I'm not going to fix since it's past the deadline
 
 run:
-```node server.js to connect to the provider and start streaming to clients```
+Connect to the provider and start streaming to clients
+```node server.js```
 
+Note:
+it is best to run the client first, then the server, then the position provider, when the csv ends, position provider has to be restarted
 
 The app:
 You can start recording by clicking on a green ship, to stop it, click again, or on another ship to switch recording.
